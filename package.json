@@ -6,11 +6,12 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
+    "clean": "gatsby clean",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "lint": "tslint --project .",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
+    "start": "npm run develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
@@ -20,6 +21,8 @@
   },
   "devDependencies": {
     "prettier": "2.1.2",
+    "tslint": "^6.1.3",
+    "tslint-config-standard": "^9.0.0",
     "typescript": "^4.0.3"
   },
   "repository": {
