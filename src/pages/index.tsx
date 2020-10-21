@@ -1,9 +1,10 @@
 import React from 'react'
 import { PageProps } from 'gatsby'
+import Layout from '../components/layout'
 
 const Home: React.FC<PageProps> = () => (
-  <main>
+  <Layout>
     <h1>Ashley Klein</h1>
-  </main>
+  </Layout>
 )
 export default Home
