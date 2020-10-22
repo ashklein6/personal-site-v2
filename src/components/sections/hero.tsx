@@ -12,8 +12,8 @@ const Hero = () => {
   return (
     <StyledHeroSection>
       <h1>Ashley Klein</h1>
-      <h2>I build neat things for web and mobile.</h2>
-      <p>I'm a full-stack software engineer based in Minneapolis, MN.</p>
+      <h2>I code neat things for web and mobile.</h2>
+      <p>I'm a software engineer based in Minneapolis, MN.</p>
     </StyledHeroSection>
   )
 }
