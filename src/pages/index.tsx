@@ -9,11 +9,13 @@ import Contact from '../components/sections/contact'
 
 const Home: React.FC<PageProps> = () => (
   <Layout>
-    <Hero/>
-    <About/>
-    <Jobs/>
-    <Projects/>
-    <Contact/>
+    <main>
+      <Hero/>
+      <About/>
+      <Jobs/>
+      <Projects/>
+      <Contact/>
+    </main>
   </Layout>
 )
 
