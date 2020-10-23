@@ -1,5 +1,5 @@
 ---
-date: '2017-12-21'
+date: '2019-02-18'
 company: 'Pikup'
 title: 'Engineering Lead'
 location: 'Minneapolis, MN'
