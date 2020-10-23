@@ -28,11 +28,25 @@ const Jobs = () => {
     }
   `)
 
-  console.log(data)
+  const jobs = data.jobs.edges
+
   return (
     <StyledJobsSection>
       <h2>Where I've Worked</h2>
-      <p></p>
+      {jobs && jobs.map(({ node }, index) => {
+        const { frontmatter, html } = node
+        const { title, url, company, dateRange } = frontmatter
+        return (
+          <div key={index}>
+            <div>
+              <h3>{title}</h3>
+              <h4><a href={url}>{company}</a></h4>
+              <p>{dateRange}</p>
+            </div>
+            <div dangerouslySetInnerHTML={{ __html: html}} />
+          </div>
+        )
+      })}
     </StyledJobsSection>
   )
 }
