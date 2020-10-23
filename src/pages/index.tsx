@@ -9,7 +9,7 @@ import Contact from '../components/sections/contact'
 
 const Home: React.FC<PageProps> = () => (
   <Layout>
-    <main>
+    <main className="fillHeight">
       <Hero/>
       <About/>
       <Jobs/>
