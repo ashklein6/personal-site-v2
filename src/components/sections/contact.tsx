@@ -2,7 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledContactSection = styled.section`
-  
+  a {
+    ${({ theme }) => theme.elements.button};
+  }
 `
 
 const Contact = () => {
