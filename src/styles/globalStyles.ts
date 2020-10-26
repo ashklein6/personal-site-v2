@@ -117,6 +117,13 @@ const GlobalStyle = createGlobalStyle`
     color: var(--pine);
   }
 
+  h2 {
+    font-family: var(--font-serif);
+    font-weight: normal;
+    font-size: var(--fz-heading);
+    text-transform: uppercase;
+  }
+
   .large-heading {
     margin: 0;
     font-size: clamp(40px, 8vw, 80px);
