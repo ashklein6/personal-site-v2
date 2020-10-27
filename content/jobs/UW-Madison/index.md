@@ -1,6 +1,7 @@
 ---
 date: '2016-09-05'
 company: 'University of Wisconsin-Madison Athletic Department'
+companyShort: 'UW-Madison'
 title: 'Tutor'
 location: 'Madison, WI'
 dateRange: 'September 2016 - December 2017'

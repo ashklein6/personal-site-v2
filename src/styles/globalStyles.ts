@@ -129,6 +129,12 @@ const GlobalStyle = createGlobalStyle`
     font-size: clamp(40px, 8vw, 80px);
   }
 
+  button {
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+  }
+
   // ::-moz-selection {
   //   color: var(--accent-2);
   //   background-color: var(--light);

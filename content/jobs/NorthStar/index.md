@@ -1,6 +1,7 @@
 ---
 date: '2017-06-05'
 company: 'NorthStar Medical Radioisotopes'
+companyShort: 'NorthStar'
 title: 'Mechanical Engineer - Isotope Processing'
 location: 'Madison, WI'
 dateRange: 'June 2017 - July 2018'

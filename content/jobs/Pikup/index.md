@@ -1,6 +1,7 @@
 ---
 date: '2019-02-18'
-company: 'Pikup'
+company: 'Pikup (formerly Runerra)'
+companyShort: 'Pikup'
 title: 'Engineering Lead'
 location: 'Minneapolis, MN'
 dateRange: 'February 2019 - Present'
