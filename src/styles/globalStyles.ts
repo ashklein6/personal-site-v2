@@ -135,37 +135,40 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
   }
 
-  // ::-moz-selection {
-  //   color: var(--accent-2);
-  //   background-color: var(--light);
-  // }
+  ::-moz-selection {
+    background-color: var(--rust-tint);
+  }
   
-  // ::selection {
-  //   color: var(--accent-2);
-  //   background-color: var(--light);
-  // }
+  ::selection {
+    background-color: var(--rust-tint);
+  }
 
-  // a {
-  //   color: var(--dark) !important;
-  //   text-decoration: none;
-  // }
-  
-  // a:visited {
-  //   color: var(--dark) !important;
-  //   text-decoration: none;
-  // }
-  
-  // a:hover, a:focus, a:active {
-  //   color: var(--dark) !important;
-  // }
-  
-  // a:focus {
-  //   outline: thin dotted;
-  // }
-  
-  // a:hover, a:active {
-  //   outline: 0;
-  // }
+  a {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    color: var(--rust);
+    font-weight: bold;
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--rust);
+      outline: 0;
+      &:after {
+        width: 100%;
+      }
+    }
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 1px;
+      position: relative;
+      background-color: var(--rust);
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+  }
   
   // .entry-content a {
   //   color: var(--dark) !important;
