@@ -6,6 +6,18 @@ const StyledProjectsSection = styled.section`
   
 `
 
+interface ProjectsQueryData {
+  node: {
+    frontmatter: {
+      priority: number
+      title: string
+      github: string
+      tech: string[]
+    }
+    html: string
+  }
+}
+
 const Projects = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -27,7 +39,7 @@ const Projects = () => {
     }
   `)
 
-  const projects = data.projects.edges
+  const projects: ProjectsQueryData[] = data.projects.edges
 
   return (
     <StyledProjectsSection>
