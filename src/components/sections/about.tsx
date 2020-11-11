@@ -8,6 +8,7 @@ const StyledAboutSection = styled.section`
   }
 
   li {
+    font-size: var(--fz-md);
     list-style: none;
     display: inline-block;
     padding: 2px 10px;

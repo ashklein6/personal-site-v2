@@ -4,30 +4,43 @@ import styled from 'styled-components'
 import { IoLogoGithub } from 'react-icons/io'
 
 const StyledProjectsSection = styled.section`
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   ul {
     margin: 0;
     padding: 0;
   }
 
   li {
+    font-size: var(--fz-md);
     list-style: none;
     display: inline-block;
     padding: 2px 10px;
     margin: 5px;
     border-radius: 5px;
-    background-color: var(--pine-tint);
-    color: var(--pine);
+    background-color: var(--pine);
+    color: var(--almond);
   }
 
-  .inline {
-    display: flex;
-    align-items: center;
+  .card {
+    background-color: var(--pine-tint);
+    padding: 20px;
+    margin: 30px 0px;
+    border-radius: 24px;
   }
 
   .icon-container {
     display: flex;
     align-items: center;
     margin-left: 6px;
+  }
+
+  .inline {
+    display: flex;
+    align-items: center;
   }
 `
 
@@ -73,7 +86,7 @@ const Projects = () => {
         const { frontmatter, html } = node
         const { title, github, tech } = frontmatter
         return (
-          <div key={index}>
+          <div key={index} className={'card'}>
             <div className={'inline'}>
               <h3>{title}</h3>
               {github && <a href={github} className={'icon-container'}><IoLogoGithub size={'1.17em'} /></a>}
