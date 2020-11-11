@@ -2,6 +2,7 @@
 priority: 2
 title: 'Izi Access'
 github: 'https://github.com/ashklein6/izi-access'
+image: './iziaccess.png'
 tech:
   - JavaScript
   - React.js

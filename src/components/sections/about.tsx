@@ -2,7 +2,20 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledAboutSection = styled.section`
-  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: var(--pine-dark-tint);
+    color: var(--almond);
+  } 
 `
 
 const About = () => {

@@ -3,16 +3,26 @@ import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 const StyledJobsSection = styled.section`
-  
+  display: block;
 `
 
 const StyledTabList = styled.ul`
-  width: max-content;
+  width: calc(100% + 50px);
   padding: 0;
   margin: 0;
+  margin-left: -25px;
   list-style: none;
   display: flex;
   overflow-x: auto;
+
+  li {
+    &:first-of-type {
+      margin-left: 25px;
+    }
+    &:last-of-type {
+      padding-right: 25px;
+    }
+  }
 `
 
 const StyledTabButton = styled.button`
@@ -29,6 +39,7 @@ const StyledTabButton = styled.button`
   border-bottom: 2px solid var(--coffee);
   font-size: var(--fz-sm);
   transition: var(--transition);
+  text-transform: uppercase;
 
   &:focus {
     outline: 0;

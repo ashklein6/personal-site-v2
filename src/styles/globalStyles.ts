@@ -5,6 +5,8 @@ const GlobalStyle = createGlobalStyle`
 
   :root {
     --pine: #4C5C47;
+    --pine-dark-tint: rgba(76, 92, 71, 0.8);
+    --pine-tint: rgba(76, 92, 71, 0.2);
     --almond: #F0EAE0;
     --rust: #954C2C;
     --rust-dark-tint: rgba(149, 76, 44, 0.8);
@@ -113,6 +115,37 @@ const GlobalStyle = createGlobalStyle`
   h3,
   h4,
   h5,
+  h6,
+  p {
+    a {
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+      color: var(--rust);
+      font-weight: bold;
+      background: linear-gradient(to bottom, var(--rust-tint) 0%, var(--rust-tint) 0%);
+      background-size: 0 0;
+      background-position: 0 100%;
+      background-repeat: repeat-x;
+      transition: background-size 0.25s cubic-bezier(0.645, 0.055, 0.305, 1);
+      &:hover,
+      &:focus,
+      &:active {
+        color: var(--rust);
+        background: linear-gradient(to bottom, var(--rust-tint) 0%, var(--rust-tint) 100%);
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 4px 12px;
+      }
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
   h6 {
     color: var(--pine);
   }
@@ -150,43 +183,13 @@ const GlobalStyle = createGlobalStyle`
     position: relative;
     color: var(--rust);
     font-weight: bold;
+    transition: all 0.25s cubic-bezier(0.645, 0.055, 0.305, 1);
     &:hover,
     &:focus,
     &:active {
-      color: var(--rust);
-      outline: 0;
-      &:after {
-        width: 100%;
-      }
-    }
-    &:after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 1px;
-      position: relative;
-      background-color: var(--rust);
-      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+      color: var(--rust-dark-tint);
     }
   }
-  
-  // .entry-content a {
-  //   color: var(--dark) !important;
-  //   background-image: linear-gradient(to bottom, transparent 0, var(--accent-3) 0);
-  //   background-position-x: 0px !important;
-  //   background-position-y: 0.65em !important;
-  //   background-repeat: no-repeat;
-  //   text-decoration: none;
-  // }
-  
-  // .entry-content a:hover, .entry-content a:focus, .entry-content a:active {
-  //   color: var(--dark) !important;
-  //   background-image: linear-gradient(to bottom, transparent 0, var(--accent-3) 0);
-  //   background-position-x: 0px !important;
-  //   background-position-y: 0.15em !important;
-  //   background-repeat: no-repeat;
-  //   text-decoration: none;
-  // }
 `
 
 export default GlobalStyle

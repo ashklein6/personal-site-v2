@@ -2,6 +2,7 @@
 priority: 1
 title: 'ChillCal'
 github: 'https://github.com/ashklein6/chillcal'
+image: './chillcal.png'
 tech:
   - JavaScript
   - React.js
