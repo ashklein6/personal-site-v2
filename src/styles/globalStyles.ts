@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --pine: #4C5C47;
     --pine-dark-tint: rgba(76, 92, 71, 0.8);
-    --pine-tint: rgba(76, 92, 71, 0.2);
+    --pine-tint: rgba(76, 92, 71, 0.1);
     --almond: #F0EAE0;
     --rust: #954C2C;
     --rust-dark-tint: rgba(149, 76, 44, 0.8);
