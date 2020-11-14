@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,300;1,500&family=Rozha+One&display=swap');
-
   :root {
     --pine: #4C5C47;
     --pine-dark-tint: rgba(76, 92, 71, 0.8);

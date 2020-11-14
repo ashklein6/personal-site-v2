@@ -24,5 +24,20 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      options: {
+        fonts: [
+          {
+            family: 'Poppins',
+            variants: ['300', '500', '300i', '500i']
+          },
+          {
+            family: 'Rozha One',
+            variants: ['400']
+          }
+        ]
+      }
+    }
   ],
 }
