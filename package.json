@@ -15,23 +15,26 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.24.67",
+    "babel-plugin-styled-components": "^1.11.1",
+    "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-sharp": "^2.8.0",
+    "gatsby-plugin-styled-components": "^3.4.0",
     "gatsby-source-filesystem": "^2.3.35",
     "gatsby-transformer-remark": "^2.8.46",
     "gatsby-transformer-sharp": "^2.6.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-icons": "^3.11.0",
+    "react-is": "^17.0.1",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
     "prettier": "2.1.2",
-    "tslint": "^6.1.3",
+    "tslint": "^5.0.0",
     "tslint-config-standard": "^9.0.0",
-    "typescript": "^4.0.3"
+    "typescript": "^3.0.0"
   },
   "repository": {
     "type": "git",
