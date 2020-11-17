@@ -61,7 +61,7 @@ export default function Socials () {
     <StyledPositioningElement>
       <StyledSocialsList>
         <li>
-          <a href={''}>
+          <a href={'/resume.pdf'}>
             <MdAccountBox size={size + 3}/>
           </a>
         </li>
