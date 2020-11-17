@@ -83,11 +83,11 @@ const GlobalStyle = createGlobalStyle`
       @media (max-width: 1080px) {
         padding: 0 100px;
       }
-  
+
       @media (max-width: 768px) {
         padding: 0 50px;
       }
-  
+
       @media (max-width: 480px) {
         padding: 0 25px;
       }
@@ -169,7 +169,7 @@ const GlobalStyle = createGlobalStyle`
   ::-moz-selection {
     background-color: var(--rust-tint);
   }
-  
+
   ::selection {
     background-color: var(--rust-tint);
   }

@@ -121,7 +121,7 @@ const Jobs = () => {
                 <h4>{dateRange} &thinsp; // &thinsp; {location}</h4>
                 <p></p>
               </div>
-              <div dangerouslySetInnerHTML={{ __html: html}} />
+              <div dangerouslySetInnerHTML={{ __html: html }} />
             </StyledTabContent>
           )
         }

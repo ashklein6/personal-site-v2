@@ -81,6 +81,6 @@ export default function Socials () {
           </a>
         </li>
       </StyledSocialsList>
-    </StyledPositioningElement> 
- )
+    </StyledPositioningElement>
+  )
 }

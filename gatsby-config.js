@@ -25,19 +25,14 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: 'Poppins',
-            variants: ['300', '500', '300i', '500i']
-          },
-          {
-            family: 'Rozha One',
-            variants: ['400']
-          }
-        ]
+          `poppins\:300,300i,500,500i`,
+          `rozha one\:400`,
+        ],
+        display: 'swap'
       }
-    }
+    },
   ],
 }

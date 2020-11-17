@@ -16,7 +16,7 @@ const StyledAboutSection = styled.section`
     border-radius: 5px;
     background-color: var(--pine-dark-tint);
     color: var(--almond);
-  } 
+  }
 `
 
 const About = () => {

@@ -10,7 +10,7 @@ import Socials from '../components/socials'
 
 const Home: React.FC<PageProps> = () => (
   <Layout>
-    <main className="fillHeight">
+    <main className='fillHeight'>
       <Hero/>
       <About/>
       <Jobs/>

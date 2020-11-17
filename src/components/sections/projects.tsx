@@ -91,7 +91,7 @@ const Projects = () => {
               <h3>{title}</h3>
               {github && <a href={github} className={'icon-container'}><IoLogoGithub size={'1.17em'} /></a>}
             </div>
-            <div dangerouslySetInnerHTML={{ __html: html}} />
+            <div dangerouslySetInnerHTML={{ __html: html }} />
             {tech && (
               <ul>
                 {tech.map((tech, index) => <li key={index}>{tech}</li>)}
