@@ -1,11 +1,11 @@
 ---
 date: '2019-02-18'
-company: 'Pikup (formerly Runerra)'
-companyShort: 'Pikup'
+company: 'Buncha (formerly Runerra)'
+companyShort: 'Buncha'
 title: 'Engineering Lead'
 location: 'Minneapolis, MN'
 dateRange: 'February 2019 - Present'
-url: 'https://www.trypikup.com/'
+url: 'https://www.gobuncha.com/'
 ---
 
 - Worked on a mobile application and server that connected users with neighbors

@@ -33,7 +33,7 @@ const About = () => {
       I worked as a mechanical engineer in nuclear pharmaceuticals. I enjoyed troubleshooting our
       project's software so much that I attended {' '}<a href='https://primeacademy.io/'>Prime Academy</a>
       {' '} to transition to software development. I got my start in software working on the mobile
-      application for {' '}<a href='https://www.trypikup.com/'>Pikup</a>.</p>
+      application for {' '}<a href='https://www.gobuncha.com/'>Buncha</a>.</p>
       <p>For the full story, check out my{' '}<a href='/resume.pdf'>resume</a>.
       For a sneak peek, here are a few technologies I've been working with recently:</p>
       <ul>
