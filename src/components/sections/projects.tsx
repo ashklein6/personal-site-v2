@@ -61,7 +61,7 @@ const Projects = () => {
     query {
       projects: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/projects/" } }
-        sort: { fields: [frontmatter___priority], order: ASC }
+        sort: { frontmatter: { priority: ASC } }
       ) {
         edges {
           node {

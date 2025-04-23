@@ -1,6 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
+import { StaticImage } from "gatsby-plugin-image"
 import styled from 'styled-components'
 
 const StyledContactSection = styled.section`
@@ -28,26 +27,23 @@ const StyledContactSection = styled.section`
 `
 
 const Contact = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      floral_3: file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "floral_3.png"}) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
   const email = 'ashklein6@gmail.com'
+
   return (
     <StyledContactSection>
       <h2>Let's Chat</h2>
-      <p>I'm actively searching for my next position and would love to discuss opportunities.</p>
+      <p>
+        I'm actively searching for my next position and would love to discuss
+        opportunities.
+      </p>
       <a href={`mailto:${email}`}>Say Hello</a>
-      <div className={'floral_3'}>
-        <Img fluid={data.floral_3.childImageSharp.fluid}/>
+      <div className={"floral_3"}>
+        <StaticImage
+          alt="floral 3"
+          src={"../../images/floral_3.png"}
+          placeholder="blurred"
+          layout="constrained"
+        />
       </div>
     </StyledContactSection>
   )

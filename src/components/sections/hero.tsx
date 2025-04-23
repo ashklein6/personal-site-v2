@@ -1,6 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
+import { StaticImage } from "gatsby-plugin-image"
 import styled from 'styled-components'
 
 const StyledHeroSection = styled.section`
@@ -92,49 +91,42 @@ const StyledHeadshot = styled.div`
 `
 
 const Hero = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      headshot: file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "headshot.jpg"}) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      floral_1: file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "floral_1.png"}) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      floral_2: file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "floral_2.png"}) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
   const email = 'ashklein6@gmail.com'
+
   return (
     <StyledHeroSection>
       <h1>Greetings, my name is</h1>
-      <h2 className='large-heading'>Ashley Klein.</h2>
+      <h2 className="large-heading">Ashley Klein.</h2>
       <p>I code neat things for web and mobile.</p>
       <p>Based in Minneapolis.</p>
       <a href={`mailto:${email}`}>Say Hello</a>
       <StyledHeadshot>
-        <div className={'headshot-shadow'}/>
-        <Img fluid={data.headshot.childImageSharp.fluid}/>
-        <div className={'floral_1'}>
-          <Img fluid={data.floral_1.childImageSharp.fluid}/>
+        <div className={"headshot-shadow"} />
+        <StaticImage
+          alt="headshot"
+          src={"../../images/headshot.jpg"}
+          placeholder="blurred"
+          layout="constrained"
+          loading="eager"
+        />
+        <div className={"floral_1"}>
+          <StaticImage
+            alt="floral 1"
+            src={"../../images/floral_1.png"}
+            placeholder="blurred"
+            layout="constrained"
+            loading="eager"
+          />
         </div>
       </StyledHeadshot>
-      <div className={'floral_2'}>
-        <Img fluid={data.floral_2.childImageSharp.fluid}/>
+      <div className={"floral_2"}>
+        <StaticImage
+          alt="floral 2"
+          src={"../../images/floral_2.png"}
+          placeholder="blurred"
+          layout="constrained"
+          loading="eager"
+        />
       </div>
     </StyledHeroSection>
   )
