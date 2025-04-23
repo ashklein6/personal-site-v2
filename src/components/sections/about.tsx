@@ -21,7 +21,7 @@ const StyledAboutSection = styled.section`
 
 const About = () => {
 
-  const skills = ['JavaScript', 'TypeScript', 'React', 'React-Native', 'Gatsby', 'GraphQL', 'Node.js', 'PostgreSQL']
+  const skills = ['JavaScript', 'TypeScript', 'React', 'React-Native', 'Gatsby', 'GraphQL', 'Node.js', 'PostgreSQL', 'Amplitude', 'Bugsnag', 'Detox', 'Git', 'Sendbird', 'Stripe']
   return (
     <StyledAboutSection>
       <h2>About Me</h2>
@@ -32,8 +32,8 @@ const About = () => {
       <p>After graduating from the {' '}<a href='https://www.wisc.edu/'>University of Wisconsin–Madison</a>,
       I worked as a mechanical engineer in nuclear pharmaceuticals. I enjoyed troubleshooting our
       project's software so much that I attended {' '}<a href='https://primeacademy.io/'>Prime Academy</a>
-      {' '} to transition to software development. I got my start in software working on the mobile
-      application for {' '}<a href='https://www.gobuncha.com/'>Buncha</a>.</p>
+      {' '} to transition to software development. I'm thrilled to have a career in mobile development, working on the mobile applications for {' '}<a href='https://www.gobuncha.com/'>Buncha</a> {' '}and{' '}<a href='https://www.shipt.com/'>Shipt</a>.</p>
+      <p>Over the last 2 years, I've stepped into management leading a team of 6 developers (app and web) to cover projects within Search, Markups & Fees, and Fulfillment.</p>
       <p>For the full story, check out my{' '}<a href='/resume.pdf'>resume</a>.
       For a sneak peek, here are a few technologies I've been working with recently:</p>
       <ul>

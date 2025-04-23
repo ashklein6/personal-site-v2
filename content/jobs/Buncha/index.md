@@ -8,12 +8,8 @@ dateRange: 'February 2019 - Present'
 url: 'https://www.gobuncha.com/'
 ---
 
-- Worked on a mobile application and server that connected users with neighbors
-running errands.
-- Scoped and executed features on front-end and back-end including menus,
-deep-linking, and community structure.
+- Worked on a mobile application and server that connected users with neighbors running errands.
+- Scoped and executed features on front-end and back-end including menus, deep-linking, and community structure.
 - Piloted app design standardization, with a focus on accessibility.
-- Managed iOS, android, and server deployments while maintaining test suites,
-incorporating a manual CI and CD pipeline, and conducting package upgrades.
-- Technologies used: React Native, React.js, Redux, RxJS, TypeScript, GraphQL, Stripe,
-Node.js, and PostgreSQL.
+- Managed iOS, android, and server deployments while maintaining test suites, incorporating a manual CI and CD pipeline, and conducting package upgrades.
+- Technologies used: React Native, React.js, Redux, RxJS, TypeScript, GraphQL, Stripe, Node.js, and PostgreSQL.
