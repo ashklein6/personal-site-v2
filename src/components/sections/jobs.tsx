@@ -37,6 +37,7 @@ const StyledTabButton = styled.button`
   color: ${({ isSelected }) => isSelected ? 'var(--almond)' : 'var(--rust)'};
   border: 0;
   border-bottom: 2px solid var(--coffee);
+  font-family: var(--font-sans);
   font-size: var(--fz-sm);
   transition: var(--transition);
   text-transform: uppercase;
